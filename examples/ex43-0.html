@@ -1,0 +1,29 @@
+<meta charset="utf8" />
+<style>
+main {	background-color: silver; 	}
+
+.flex { 	display:flex;	flex-direction: row; flex-wrap: wrap; }
+
+/* key : align-content */
+/*	main { 	align-items: flex-start; }		/**/
+/*	main { align-content: flex-end; }			/**/
+/*	main { 	align-content: center; }		/**/
+/*	main { 	align-content: stretch; }		/**/
+/*  main { 	align-content: space-between; }	/**/
+/*	main { 	align-content: space-around; }	/**/
+
+#r,#g,#b { opacity:0.7;	color:white; width: 160; height:50px; 
+	flex: 1;
+}	
+#r { background:red; 		}
+#g { background:green; 	}
+#b { background:blue; 	}
+
+
+</style>
+
+<main class="flex" >
+	<div id="r" ><p>1</p></div>
+ 	<div id="g" ><p>2</p></div>
+	<div id="b" ><p>3</p></div>
+</main>

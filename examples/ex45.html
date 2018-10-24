@@ -1,0 +1,21 @@
+<style>
+main { display:flex; flex-flow: row wrap; }
+
+
+#r,#g,#b { 	
+			flex-basis:160px; /*寬度基準*/
+			flex-grow:2; /*伸展比*/
+			flex-shrink:2;	/*收縮比*/			}
+			
+/* keypoint : order */			
+#r { background:red; 		opacity:0.7;	color:white; order: 2;}
+#g { background:green; 	opacity:0.7;	color:white; order: 3;}
+#b { background:blue; 	opacity:0.7;	color:white; order: 1;}
+
+</style>
+
+<main>
+	<div id="r"><p>1</p></div>
+ 	<div id="g"><p>2</p></div>
+	<div id="b"><p>3</p></div>
+</main>
