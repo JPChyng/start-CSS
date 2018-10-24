@@ -1,0 +1,42 @@
+<meta charset="utf8" />
+<style>
+article { display: grid; background: yellow;
+					grid-template-areas: 
+					"header header 	"
+          "main 	aside		"
+          "footer footer	";
+  }
+* { border:1px solid white ;  
+		padding:5px; 
+		color:white; 
+		background-color: red;	}
+header {	grid-area: header;		background-color: black;}
+main 	 { 	grid-area: main; 			background-color: blue;}
+aside  {  grid-area: aside; 		background-color: green; }
+footer { 	grid-area: footer; 		background-color: black;}
+</style>
+<article>
+	<header>
+		傻子的故事
+	</header>
+	<main>	
+		<div>	
+			<p>
+				從前有對傻兄弟。				
+			</p>
+			<p>
+				大傻看著二儍說：「你是傻子，還是個二傻子。」
+			</p>
+			<p>
+				二傻回嘴說：「你才是傻子哩！還是個標準的大傻子。」
+			</p>
+		</div>
+	</main>
+	<aside>	
+		<nav>	
+			<a>故事1</a>
+			<a>故事2</a>		
+		</nav>
+	</aside>
+	<footer>@copyright</footer>
+</article>
