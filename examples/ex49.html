@@ -5,9 +5,9 @@ div { 	border:solid; width:160;
 #g { background-color:green;}
 #b { background-color:blue; }
 
-#r { position:fixed; 	left:0	; top:0;  }
-#g { position:relative; left:80	; top:25; }
-#b { position:relative; left:160; top:50; }
+#r { position:absolute; left:0	; top:0	; z-index:1 }
+#g { position:absolute; left:80	; top:25; z-index:2 }
+#b { position:absolute; left:160; top:50; z-index:3 }
 
 </style>
 <div id="r">	<p>1</p>	</div>
