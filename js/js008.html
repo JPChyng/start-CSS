@@ -1,0 +1,21 @@
+<script>
+var person= new person('John',21);	//新人
+person.whoswho();
+
+function person(name,age) {
+	this.name=name;
+	this.age=age;
+	this.whoswho=function(){
+		alert(this.name+"有"+this.age+"歲大。");
+	}
+}
+
+function listMember(main) {
+  var s = "";
+  for( key in main )  // 使用 in 運算子列舉所有成員
+  	{s += key + ": " + main[key] + "\n";}
+  return s;
+}
+alert(listMember(person));	
+
+</script>

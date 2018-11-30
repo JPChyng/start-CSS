@@ -1,0 +1,17 @@
+<img src="1.png" width="100" height="100" id="i1" />
+<script>
+	var tag=document.getElementById('i1');	//尋標
+	function resize(img,s){
+		var attr={width:s, height:s};
+		for (var key in attr){
+			img[key]*=attr[key];	//根據鍵來抽換情報
+		}
+	}
+	tag.onmouseover = function() {	//佈置魔法
+		resize(this,2);		
+	}
+	tag.onmouseout = function() {	//佈置魔法
+		resize(this,0.5);		
+	} 
+</script>
+

@@ -1,0 +1,18 @@
+<script>
+	alert({width:2, height:2}.width);
+	alert({width:2, height:2}.height);
+	alert({width:0.5, height:0.5}['width']);
+	alert({width:0.5, height:0.5}['height']);
+</script>
+<script>
+	var att1={ width:8 , height:8 };		//放大2倍
+	var att2={ width:0.2 , height:0.2 };	//縮小一半
+	for (let key in att1) 	{ alert(att1[key]);}	//取鍵
+//	for (let value of att2) 	{ alert(value);}	//取鍵
+
+	let iterable = [10, 20, 30];
+	for (let value of iterable) {
+  	value += 1;
+  	alert(value);
+	}
+</script>

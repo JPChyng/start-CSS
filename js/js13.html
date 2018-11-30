@@ -1,0 +1,11 @@
+<script src='getScore.js'></script>	
+<script>
+var killedHares=[1,5,9,4,6,9],score=0;
+for (let i in killedHares)	//取出座號登記於「i」變數
+{	alert('第「'+i
+	+'」次出擊擊殺了「'+ killedHares[i]
+	+'」隻兔怪，得「'+getScore(killedHares[i])
+	+'」分。累積得「'+(score+=getScore(killedHares[i]))
+	+'」分。');
+}
+</script>
