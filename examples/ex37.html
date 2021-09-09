@@ -1,42 +1,49 @@
-<meta charset="utf8" />
 <style>
-article { display: grid; background: yellow;
-					grid-template-areas: 
-					"header header 	"
-          "main 	aside		"
-          "footer footer	";
-  }
-* { border:1px solid white ;  
-		padding:5px; 
-		color:white; 
-		background-color: red;	}
-header {	grid-area: header;		background-color: black;}
-main 	 { 	grid-area: main; 			background-color: blue;}
-aside  {  grid-area: aside; 		background-color: green; }
-footer { 	grid-area: footer; 		background-color: black;}
+main { display:grid;
+	grid-template:repeat(4,120px)/repeat(4,160px);/**/
+/* 	grid-template-columns:repeat(4,160px);
+ 	grid-template-rows: repeat(4,120px);	/**/
+  	grid-gap: 5px;
+  	grid-auto-flow: column dense;	/*圖45*/
+}	
+/*#A16 { grid-column:4/5; 	}	*/
+
 </style>
-<article>
-	<header>
-		傻子的故事
-	</header>
-	<main>	
-		<div>	
-			<p>
-				從前有對傻兄弟。				
-			</p>
-			<p>
-				大傻看著二儍說：「你是傻子，還是個二傻子。」
-			</p>
-			<p>
-				二傻回嘴說：「你才是傻子哩！還是個標準的大傻子。」
-			</p>
+<main>
+	<div id="A1">
+		<img width="160px" height="120px" src="../images/CSS08a.png" alt="" />
 		</div>
-	</main>
-	<aside>	
-		<nav>	
-			<a>故事1</a>
-			<a>故事2</a>		
-		</nav>
-	</aside>
-	<footer>@copyright</footer>
-</article>
+	<div id="A2">
+		<img width="160px" height="120px" src="../images/CSS08b.png" alt="" />
+		</div>
+	<div id="A3">
+		<img width="160px" height="120px" src="../images/CSS09a.png" alt="" />
+		</div>
+	<div id="A4">
+		<img width="160px" height="120px" src="../images/CSS09b.png" alt="" />	</div>
+	<div id="A5">
+		<img width="160px" height="120px" src="../images/CSS10a.png" alt="" />	</div>
+	<div id="A6">
+		<img width="160px" height="120px" src="../images/CSS10b.png" alt="" />	</div>
+	<div id="A7">
+		<img width="160px" height="120px" src="../images/CSS11a.png" alt="" />	</div>
+	<div id="A8">
+		<img width="160px" height="120px" src="../images/CSS11b.png" alt="" />	</div>
+	<div id="A9">
+		<img width="160px" height="120px" src="../images/CSS12a.png" alt="" />	</div>
+	<div id="A10">
+		<img width="160px" height="120px" src="../images/CSS12b.png" alt="" />	</div>
+	<div id="A11">
+		<img width="160px" height="120px" src="../images/CSS13a.png" alt="" />	</div>
+	<div id="A12">
+		<img width="160px" height="120px" src="../images/CSS13b.png" alt="" />	</div>
+	<div id="A13">
+		<img width="160px" height="120px" src="../images/CSS14a.png" alt="" />	</div>
+	<div id="A14">
+		<img width="160px" height="120px" src="../images/CSS14b.png" alt="" />	</div>
+	<div id="A15">
+		<img width="160px" height="120px" src="../images/CSS15a.png" alt="" />	</div>
+	<div id="A16">
+		<img width="160px" height="120px" src="../images/CSS15b.png" alt="" />	</div>
+</main>
+

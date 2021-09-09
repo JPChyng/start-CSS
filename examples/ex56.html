@@ -1,0 +1,87 @@
+<meta charset="utf-8">
+
+<style>
+body {
+	display: grid;
+	grid-template-rows: repeat(2,200px);
+	grid-template-columns: repeat(2,200px);
+}
+p {
+	border: dotted thin #d12ec1;
+	margin: 0;
+}
+.space {	/*cross axis*/
+/*	align-items: center;	/**/
+/*	align-items: flex-start;/**/
+/*	align-items: flex-end;	/**/
+/*	align-items: baseline;	/**/
+	align-items: stretch;	/**/
+}
+.space {	/*mainwise axis*/
+/*	justify-content: flex-end;		/*b*/
+/*	justify-content: flex-start;	/*c*/
+/*	justify-content: center;		/*d*/
+/*	justify-content: space-around;	/*e*/
+	justify-content: space-between;	/*a*/
+	align-content: stretch;			/*A*/
+	align-content: center;			/*B*/
+	align-content: flex-end;		/*C*/
+	align-content: flex-start;		/*D*/
+	align-content: space-around;	/*E*/
+	align-content: space-between;	/*F*/
+}
+.space:nth-child(2){
+	transform:translate(0%,0%) rotate(0.5turn);
+}
+.space:nth-child(3){
+	transform:translate(75%,0%) rotate(0.75turn);
+}
+.space:nth-child(4){
+	transform:translate(0%,0%) rotate(0turn);
+}
+.space:nth-child(1) {
+	transform:translate(75%,0%) rotate(0.25turn);
+}
+.space{	
+	grid-auto-flow: column;
+	display:flex;
+	flex-direction: column;
+	background: #f0f0f0;
+	width: 80px;/**/
+	height: 200px;
+}
+.bar { 
+	border:dashed thin lightblue;
+	height: 20px;
+	width: 80px;
+}
+.purple { 
+	background: purple;
+}
+
+.space p:nth-child(3) {
+	margin-top: auto;
+}
+
+</style>
+
+<div class="space">
+	<p class="bar purple" ></p>
+	<p>Mediterranean Avenue</p>
+	<p>Price $400</p>
+</div>
+<div class="space">
+	<p class="bar purple" ></p>
+	<p>Mediterranean Avenue</p>
+	<p>Price $400</p>
+</div>
+<div class="space">
+	<p class="bar purple" ></p>
+	<p>Mediterranean Avenue</p>
+	<p>Price $400</p>
+</div>
+<div class="space">
+	<p class="bar purple" ></p>
+	<p>Mediterranean Avenue</p>
+	<p>Price $400</p>
+</div>

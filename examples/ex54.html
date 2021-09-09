@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+
+<style>
+p {
+	border: dotted thin #d12ec1;
+	margin: 0px;		/**/
+	font-size: 12px;	
+}
+.space {
+	align-items: center;	/*a*/
+/*	align-items: stretch;	/*b*/
+/*	align-items: start;		/*c*/
+/*	align-items: end ;		/*d*/
+/*	align-items: baseline;	/*e*/
+}
+.space {
+/*	justify-content: center;		/*a*/
+	justify-content: space-between;	/*b*/
+/*	justify-content: flex-start;	/*c*/
+/*	justify-content: flex-end;		/*d*/
+/*	justify-content: space-around;	/*e*/
+	align-content: stretch;
+}
+.space {
+	display:flex;
+	flex-direction:	row;	/*52b*/
+/*	flex-direction: column;	/*52a*/
+
+	width: 300px;			/*52b*/
+/*	width: 80px;			/*52a*/
+/*	height: 125px;			/*52a*/
+	background: #f0f0f0;
+}
+.bar { 
+	border:dashed thin lightblue;
+	height: 25px; width: 80px;
+}
+.purple { 
+	background: purple;
+}
+
+</style>
+
+<div class="space">
+	<p class="bar purple" ></p>
+	<p>Mediterranean Avenue</p>
+	<p>Price $400</p>
+</div>

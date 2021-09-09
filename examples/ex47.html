@@ -1,19 +1,25 @@
+<meta charset="utf-8">
 
 <style>
-div	{ height: 200px;}
-div { overflow: scroll; }		/*a*
-div { overflow: hidden; }		/*b*
-div { overflow: visible;}		/*c*
-div { overflow: auto;	}			/*d*/
+.space {
+	display:flex;
+	flex-direction: column;
+	background: #c1c1c1;
+	width: 80px;
+/*	height: 180px;*/
+}
+.color-bar { 
+	border:dashed thin lightblue;
+	height: 25px;
+}
+.purple { 
+	background: purple;
+}
+
 </style>
-<div>
-	<p>
-		Jack was a sailor. He lived in England, but he was often away with his ship.
-	</p>
-	<p>
-		One summer he came back from a long voyager and found new neighbours near his mother's house. They had a pretty daughter, and Jack loved her very much.
-	</p>
-	<p>
-		He said to her, 'My next voyage will begin in a few days' time, Gloria. I love you and I'll marry you when I come back. I'll think about you all the time, and I'll write to you and send you a present from every port.'
-	</p>	
+
+<div class="space">
+	<p class="color-bar purple" ></p>
+ 	<p>Mediterranean Avenue</p>
+	<p>Price $400</p>
 </div>
