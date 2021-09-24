@@ -6,15 +6,15 @@ article {
 	grid-template-rows:3fr 6fr 1fr;
 	grid-template-areas: 
 		"header header 	"
-    	"main 	aside	"
+    	"main 	nav	"
     	"footer footer	";
 	background: yellow;
-    border:1px solid red;
+   border:1px solid red;
 	}
 * {	padding:5px; color:white; }
 header 	{grid-area: header;		background: black;}
 main	{grid-area: main; 		background: blue;	}
-aside  	{grid-area: aside; 		background: green;}
+nav  	{grid-area: nav; 		background: green;}
 footer	{grid-area: footer; 	background: black;}
 </style>
 <article>
@@ -34,11 +34,11 @@ footer	{grid-area: footer; 	background: black;}
 			</p>
 		</div>
 	</main>
-	<aside>	
+<!--	<aside>	-->
 		<nav>	
 			<a>兄弟吵架</a>
 			<a>兄弟釣魚</a>		
 		</nav>
-	</aside>
+<!--	</aside>-->
 	<footer>@copyright</footer>
 </article>
