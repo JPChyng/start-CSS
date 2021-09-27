@@ -1,66 +1,104 @@
 <meta charset="utf-8" />
 
 <style>
-
-p {
-	border: dotted thin #d12ec1;
-	margin: 0;
+.up {
+	transform:translate(0%,0%) rotate(0deg);
+/*	transform:translate(0%,0%) rotate(0turn);		*/
 }
 
-.space {	/*crosswise axis*/
+.right {
+	transform:translate(50%,0%) rotate(90deg);
+/*	transform:translate(75%,0%) rotate(0.25turn);	*/
+}
+
+.down {
+	transform:translate(0%,0%) rotate(180deg);
+/*	transform:translate(0%,0%) rotate(0.5turn);	*/
+}
+
+.left {
+	transform:translate(50%,0%) rotate(-90deg);
+/*	transform:translate(75%,0%) rotate(0.75turn);	*/
+}
+
+/*
+.space:nth-child(2){
+	transform:translate(0%,0%) rotate(0.5turn);
+}
+.space:nth-child(3){
+	transform:translate(75%,0%) rotate(0.75turn);
+}
+.space:nth-child(4){
+	transform:translate(0%,0%) rotate(0turn);
+}
+.space:nth-child(1) {
+	transform:translate(75%,0%) rotate(0.25turn);
+}
+*/
+/* space typesetting */
+
+.space {	/* crosswise */
 /*	align-items: center;		/**/
 /*	align-items: flex-start;/**/
 /*	align-items: flex-end;	/**/
 /*	align-items: baseline;	/**/
 	align-items: stretch;	/**/
 }
-
-.space {	/*mainwise axis*/
-/*	justify-content: flex-end;			/*b*/
-/*	justify-content: flex-start;		/*c*/
-/*	justify-content: center;			/*d*/
+.space {	/*mainwise */
+/*	justify-content: center;		/*d*/
+/*	justify-content: flex-start;	/*c*/
+/*	justify-content: flex-end;		/*b*/
 /*	justify-content: space-around;	/*e*/
 /*	justify-content: space-between;	/*a*/
-	justify-content: stretch; 			/*f*/
-}
-
-.noturn {
-	transform: rotate(0deg);	/* a 	*/
-}
-.right {
-	transform: rotate(90deg);	/*	d	*/
-}
-.left {
-	transform: rotate(270deg);	/*	c	*/
-}
-.down {
-	transform: rotate(180deg);	/*	b	*/
-}
-
-.space {
-	transform: translate(100%,0%);
+	justify-content: stretch;		/*f*/
 }
 
 .space{	
 	display:flex;
-	flex-direction: column;
 	background: #f0f0f0;
-	width: 80px;	
-	height: 200px;
+	/* in column */
+	flex-direction: column;
+	width: 80px;/**/
+	height: 125px;
 }
+
 .bar { 
 	border:dashed thin lightblue;
 	height: 20px;
 	width: 80px;
 }
+
 .purple { 
 	background: purple;
 }
 
+p {
+	border: dotted thin #d12ec1;
+	margin: 0;
+	font-size: 12px;	/* on purpose */
+}
 
 </style>
 
-<div class="space">
+<div class="space up">
+	<p class="bar purple" ></p>
+	<p>Mediterranean Avenue</p>
+	<p>Price $400</p>
+</div>
+
+<div class="space left">
+	<p class="bar purple" ></p>
+	<p>Mediterranean Avenue</p>
+	<p>Price $400</p>
+</div>
+
+<div class="space down">
+	<p class="bar purple" ></p>
+	<p>Mediterranean Avenue</p>
+	<p>Price $400</p>
+</div>
+
+<div class="space right">
 	<p class="bar purple" ></p>
 	<p>Mediterranean Avenue</p>
 	<p>Price $400</p>
